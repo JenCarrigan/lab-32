@@ -1,42 +1,33 @@
 ![CF](http://i.imgur.com/7v5ASc8.png) LAB
 =================================================
 
-## Project Name
+## Lab 32 - Forms
 
-### Author: Student/Group Name
+### Author: Jen Carrigan
 
 ### Links and Resources
-* [repo](http://xyz.com)
-* [travis](http://xyz.com)
-* [back-end](http://xyz.com)
-* [front-end](http://xyz.com)
+* [sandbox](https://codesandbox.io/s/r02x67pp1p)
 
 ### Modules
-#### `modulename.js`
-##### Exported Values and Methods
+#### `index.js`
+renders the store and App.js
 
-###### `foo(thing) -> string`
-Usage Notes or examples
+#### `store/index.js`
+exports the store
 
-###### `bar(array) -> array`
-Usage Notes or examples
+#### `record-actions.js`
+exports the actions: GET, POST, PUT, DELETE
 
-### Setup
-#### `.env` requirements
-* `PORT` - Port Number
-* `MONGODB_URI` - URL to the running mongo instance/db
+#### `record-reducers.js`
+sets the initial state and exports new state based on incoming action
 
-#### Running the app
-* `npm start`
-* Endpoint: `/foo/bar/`
-  * Returns a JSON object with abc in it.
-* Endpoint: `/bing/zing/`
-  * Returns a JSON object with xyz in it.
+#### `App,js`
+class App has constructor for state.
+App methods are delete, edit, and render for markup
 
-#### Tests
-* How do you run tests?
-* What assertions were made?
-* What assertions need to be / should be made?
+#### `record.js`
+class Record has methods handleSubmit and render for markup
+global functions are mapStateToProps and mapDispatchToProps
 
 #### UML
-Link to an image of the UML for your application and response to events
+![UML](https://raw.githubusercontent.com/JenCarrigan/data-structures-and-algorithms/master/%3Aassets/FormsUML.jpg)
